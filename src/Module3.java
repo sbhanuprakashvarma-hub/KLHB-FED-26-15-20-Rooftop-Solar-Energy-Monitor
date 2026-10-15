@@ -8,10 +8,10 @@ void printSummary() {
 
         for (int i = 0; i < count; i++) {
             DailyRecord r = records[i];
-            totalGen += r.getGenerated();
-            totalCons += r.getConsumed();
-            totalSurplus += r.getSurplus();
-            totalSelf += r.getSelfUsed();
+            totalGen + = r.getGenerated();
+            totalCons + = r.getConsumed();
+            totalSurplus + = r.getSurplus();
+            totalSelf + = r.getSelfUsed();
             if (r.getGenerated() > records[best].getGenerated())  best = i;
             if (r.getGenerated() < records[worst].getGenerated()) worst = i;
         }
