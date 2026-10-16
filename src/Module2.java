@@ -1,10 +1,9 @@
 
-/** Holds all records and does the calculations and file handling. */
 class EnergyMonitor {
     private DailyRecord[] records = new DailyRecord[10];
     private int count = 0;
     private double tariff = 7.0;       // Rs saved per kWh of solar used at home
-    private double exportRate = 3.0;   // Rs earned per kWh of surplus sent to grid
+    private double exportRate = 3.0;   // Rs earned per kWh of surplus sent to gri
 
     int getCount()             { return count; }
     double getTariff()         { return tariff; }
