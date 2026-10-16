@@ -2,8 +2,8 @@
 class EnergyMonitor {
     private DailyRecord[] records = new DailyRecord[10];
     private int count = 0;
-    private double tariff = 7.0;       // Rs saved per kWh of solar used at home
-    private double exportRate = 3.0;   // Rs earned per kWh of surplus sent to gri
+    private double tariff = 7.0;      
+    private double exportRate = 3.0;   
 
     int getCount()             { return count; }
     double getTariff()         { return tariff; }
@@ -11,7 +11,7 @@ class EnergyMonitor {
     void setTariff(double t)   { tariff = t; }
     void setExportRate(double r) { exportRate = r; }
 
-    /** Adds a record; grows the array when it is full. Returns false if the date already exists. */
+ 
     boolean addRecord(DailyRecord r) {
         for (int i = 0; i < count; i++) {
             if (records[i].getDate().equals(r.getDate())) {
