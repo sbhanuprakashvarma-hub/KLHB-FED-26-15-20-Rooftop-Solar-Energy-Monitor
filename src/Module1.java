@@ -17,17 +17,15 @@ class DailyRecord {
     double getGenerated()  { return generated; }
     double getConsumed()   { return consumed; }
 
-    /** Solar energy left over after the home's needs (0 if none). */
     double getSurplus() {
         return generated > consumed ? generated - consumed : 0 ;
     }
 
-    /** Energy the home had to draw from the grid (0 if none). */
+  
     double getGridImport() {
         return consumed > generated ? consumed - generated : 0 ;
     }
 
-    /** Portion of solar energy used directly by the home. */
     double getSelfUsed() {
         return Math.min(generated, consumed);
     }
