@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 
 class DailyRecord {
-    private String date;        // e.g. 2026-09-28
-    private double generated;   // kWh produced by the panels
-    private double consumed;    // kWh used by the home
+    private String date;        
+    private double generated;   
+    private double consumed;    
 
     DailyRecord(String date, double generated, double consumed) {
         this.date = date;
