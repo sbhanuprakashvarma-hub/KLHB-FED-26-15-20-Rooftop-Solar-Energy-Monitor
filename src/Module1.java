@@ -1,18 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-/**
- * Rooftop Solar Energy Monitor
- * PSPJ (Problem Solving Using Java) - PBL Project 24
- *
- * Concepts used: classes and objects, methods, arrays, loops,
- * conditional statements, variables and file handling.
- *
- * Compile:  javac SolarMonitor.java
- * Run:      java SolarMonitor
- */
 
-/** One day's energy record (an object stored in the records array). */
 class DailyRecord {
     private String date;        // e.g. 2026-09-28
     private double generated;   // kWh produced by the panels
