@@ -75,7 +75,6 @@ void printSummary() {
                         }
                     }
                 } catch (NumberFormatException e) {
-                    // skip a damaged line and keep reading
                 }
             }
         }
